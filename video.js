@@ -4,7 +4,7 @@ var video = document.getElementById("video");
 var media = navigator.mediaDevices.getUserMedia({
   video: true, //ビデオを取得する
   //使うカメラをインカメラか背面カメラかを指定する場合には
-  //video: { facingMode: "environment" },//背面カメラ
+  video: { facingMode: "environment" }, //背面カメラ
   //video: { facingMode: "user" },//インカメラ
   audio: false //音声が必要な場合はture
 });
