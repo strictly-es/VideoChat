@@ -17,7 +17,8 @@
         <!-- Video area -->
         <div class="pure-u-2-3" id="video-container">
             <video id="their-video" autoplay playsinline="true"></video>
-            <video id="my-video" muted="true" autoplay playsinline="true"></video>
+            <!-- <video id="my-video" muted="true" autoplay playsinline="true"></video> -->
+            <div id="my-video"></div>
         </div>
 
         <!-- Steps -->
@@ -45,11 +46,16 @@
 
             <!-- Make calls to others -->
             <div id="step2">
-                <p>Your id: <span id="my-id">...</span></p>
-                <p>Share this id with others so they can call you.</p>
+                <!-- <p>Your id: <span id="my-id">...</span></p>
+                <p>Share this id with others so they can call you.</p> -->
+                <!-- <h3>Input ID</h3>
+                <form id="input-id" class="pure-form">
+                    <input type="text" placeholder="input id..." id="input-id-2">
+                    <button href="#" class="pure-button pure-button-success" type="submit">Input</button>
+                </form> -->
                 <h3>Make a call</h3>
                 <form id="make-call" class="pure-form">
-                    <input type="text" placeholder="Call user id..." id="callto-id">
+                    <!-- <input type="text" placeholder="Call user id..." id="callto-id"> -->
                     <button href="#" class="pure-button pure-button-success" type="submit">Call</button>
                 </form>
             </div>
@@ -64,5 +70,37 @@
 
 
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    // var config = {
+    //     apiKey: "AIzaSyCDqjEvJZps40rpbvCz_gs--mQqIE3DMJg",
+    //     authDomain: "test-chatapp-a7cbe.firebaseapp.com",
+    //     databaseURL: "https://test-chatapp-a7cbe.firebaseio.com",
+    //     projectId: "test-chatapp-a7cbe",
+    //     storageBucket: "test-chatapp-a7cbe.appspot.com",
+    //     messagingSenderId: "189037178542"
+    // };
+    // firebase.initializeApp(config);
+
+    //const users = firebase.database();
+
+
+    //const newPostRef = firebase.database();
+    //console.log(newPostRef);
+
+
+    //送信
+    // send.addEventListener("click", function () {
+    //     newPostRef.ref(room).push({
+    //         username: username.value,
+    //         text: text.value,
+    //         time: time(),
+    //         adminflag: admin_flag.checked ? true : false
+    //     });
+    //     text.value = "";
+    // });
+</script>
 
 </html>
